@@ -21,10 +21,20 @@ public class array {
         System.out.println(cars);
         String temp = cars.get(0); // retrieves value of index 0 in arraylist
         System.out.println(temp); 
-        
+
         for(int i = 0; i < cars.size(); i++){
             System.out.print(cars.get(i)); // Prints index i
         }
-        // ArrayList also has a .sort method -- view online 
+        // ArrayList also has a .sort method -- view online
+        
+        // Notes for Multidimensional Arrays
+
+        int[][] numbers = {{1,2,3,4,5},{6,7,8,9,10}};
+
+        for(int i = 0; i < numbers.length; i++){ // Loops through array sets
+            for(int j = 0; j < numbers[i].length; j++){ // Loops through individual Array
+                System.out.println(numbers[i][j]); 
+            }
+        }
     }
 }
