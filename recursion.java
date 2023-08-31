@@ -3,9 +3,9 @@ import java.util.Scanner;
 // THIS NOTES PAGE COVERS RECURSION -- IF NEEDED REVIEW SCANNER ON W3SCHOOLS (https://www.w3schools.com/java/java_user_input.asp)
 public class recursion {
     public static void main(String[] args) {
-        // System.out.println("FIRST EXAMPLE: ");
-        // int result = calculate(10);
-        // System.out.println("The result is " + result + "!");
+        System.out.println("FIRST EXAMPLE: ");
+        int result = calculate(10);
+        System.out.println("The result is " + result + "!");
 
         System.out.println();
         System.out.println();
@@ -20,7 +20,7 @@ public class recursion {
         while (temp) {
             System.out.println(
                     "Please enter a number you would like to find the factorial of. Please do not enter a number less than or equal to 1");
-            String theInput = "5";// userInput.nextLine();
+            String theInput = userInput.nextLine();
             if (Integer.parseInt(theInput) >= 1) { // Integer.parseInt(String temp) takes in a String and converts it to
                                                    // an int. If help is needed, view this webpage:
                                                    // https://stackoverflow.com/questions/5585779/how-do-i-convert-a-string-to-an-int-in-java
@@ -46,6 +46,10 @@ public class recursion {
         }
     }
 
+    // SEE NEXT FUNCTION FOR A MORE COMPLICATED AND REALISTIC PROBLEM.
+
+    // TASK: CREATE A FUNCTION THAT CALCULATES THE FACTORIAL OF ANY NUMBER GIVEN.
+
     static int calculateFactorial(int userInput, int placeHolder) {
         while (placeHolder > 1) {
             userInput = userInput * (placeHolder - 1);
@@ -54,7 +58,4 @@ public class recursion {
         }
         return userInput;
     }
-    // SEE NEXT FUNCTION FOR A MORE COMPLICATED AND REALISTIC PROBLEM.
-
-    // TASK: CREATE A FUNCTION THAT CALCULATES THE FACTORIAL OF ANY NUMBER GIVEN.
 }
