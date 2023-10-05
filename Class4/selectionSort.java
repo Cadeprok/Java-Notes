@@ -45,13 +45,19 @@ public class selectionSort {
         return 1;
     }
 
+    // For explaining compareTo()
+    // https://www.youtube.com/watch?v=g0_pQCxfgKI&ab_channel=NathanS
+
+    
+    
+    
+
+    
+
     
 
 
-
-
-
-    
+   
 
 
 
