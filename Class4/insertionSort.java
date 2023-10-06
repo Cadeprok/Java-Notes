@@ -3,7 +3,7 @@ package Class4;
 public class insertionSort {
     public static void main(String args[]) {
         int[] array = { 1, 2, 3, 4, 6, 7 };
-        for (int index = 0; index < array.length; index++) {
+        for (int index = 1; index < array.length; index++) {
             Comparable key = array[index];
             int position = index;
             // Shifting larger values to the right

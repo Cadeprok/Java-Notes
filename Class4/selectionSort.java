@@ -45,19 +45,29 @@ public class selectionSort {
         return 1;
     }
 
+    public int[] selectionSort(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < array.length; j++) { // Need to start at index (i+1) so you sort through already sorted variables
+                // Checking if value is less than assigned min value
+                if (array[min] > array[j]) {
+                    min = j;
+                }
+            }
+            // Swapping variables
+            int temp = array[i];
+            array[i] = array[min];
+            array[min] = temp;
+        }
+        return array;
+}
+
     // For explaining compareTo()
     // https://www.youtube.com/watch?v=g0_pQCxfgKI&ab_channel=NathanS
 
-    
-    
-    
-
-    
-
-    
 
 
-   
+
 
 
 
